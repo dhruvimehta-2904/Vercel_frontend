@@ -38,7 +38,7 @@ const [us, setUser] = useState(null)
         formData.append("password", signup.password)
         formData.append("pic", pic)
 
-        const response = await fetch("http://localhost:3000/signup",{
+        const response = await fetch("http://mern-backend.onrender.com/signup",{
             method:"POST",
             body:formData
         })

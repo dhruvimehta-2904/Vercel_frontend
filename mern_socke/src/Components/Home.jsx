@@ -24,7 +24,7 @@ export const Home = ()=>{
     const handleSubmit = async(e)=>{
    e.preventDefault()
    
-   const responnse = await fetch("http://localhost:3000/login",{
+   const responnse = await fetch("http://mern-backend.onrender.com/login",{
     method:"POST",
     headers:{
         "Content-Type": "application/json",
