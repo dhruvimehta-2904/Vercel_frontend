@@ -7,7 +7,7 @@ export const Search = () => {
   const fetchUser = async () => {
     const token = localStorage.getItem("token")
 
-    const response = await fetch("http://mern-backend.onrender.com/all", {
+    const response = await fetch("https://vercel-backend-ten-alpha.vercel.app/all", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const Search = () => {
   const handleSubmit = async(e)=>{
     e.preventDefault()
     const token = localStorage.getItem("token")
-    const response = await fetch(`http://mern-backend.onrender.com/search?name=${name}`,{
+    const response = await fetch(`https://vercel-backend-ten-alpha.vercel.app/search?name=${name}`,{
     //    method:"GET",
         headers:{
             "Content-Type":"application/json",
@@ -69,7 +69,7 @@ export const Search = () => {
           <p>Name: {ele.name}</p>
           <p>Email: {ele.email}</p>
           {ele.pic && (
-            <img src={`http://mern-backend.onrender.com/${ele.pic}`} width={80} />
+            <img src={`https://vercel-backend-ten-alpha.vercel.app/${ele.pic}`} width={80} />
           )}
         </li>
       ))}

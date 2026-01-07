@@ -38,7 +38,7 @@ const [us, setUser] = useState(null)
         formData.append("password", signup.password)
         formData.append("pic", pic)
 
-        const response = await fetch("http://mern-backend.onrender.com/signup",{
+        const response = await fetch("https://vercel-backend-ten-alpha.vercel.app/signup",{
             method:"POST",
             body:formData
         })

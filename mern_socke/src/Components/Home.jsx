@@ -24,7 +24,7 @@ export const Home = ()=>{
     const handleSubmit = async(e)=>{
    e.preventDefault()
    
-   const responnse = await fetch("http://mern-backend.onrender.com/login",{
+   const responnse = await fetch("https://vercel-backend-ten-alpha.vercel.app/login",{
     method:"POST",
     headers:{
         "Content-Type": "application/json",
